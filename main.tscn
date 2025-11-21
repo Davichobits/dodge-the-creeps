@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8bbnhvw3dxn"]
+[gd_scene load_steps=5 format=3 uid="uid://b8bbnhvw3dxn"]
 
 [ext_resource type="Script" uid="uid://ddh5gc7adx1so" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://otgpl0x6dnwr" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://c431pimex4n5c" path="res://mob.tscn" id="2_h2yge"]
 
 [sub_resource type="Curve2D" id="Curve2D_0xm2m"]
 _data = {
@@ -11,6 +12,7 @@ point_count = 5
 
 [node name="Main" type="Node"]
 script = ExtResource("1_0xm2m")
+mob_scene = ExtResource("2_h2yge")
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 
